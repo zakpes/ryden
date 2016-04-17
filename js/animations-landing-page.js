@@ -19,7 +19,7 @@ $(function main() {
             $greenPath.addClass("green-path-move");
             $miles.addClass("miles-move");
             $fillGreen.addClass("fill-green-ani");
-        };
+        }
         /*$(".miles").css("margin-left", "70px").delay(slow);*/
 
     });
@@ -84,7 +84,7 @@ $(function main() {
                 }, duration);
             }
         });
-    };
+    }
 /*
      technology section text changer
 
@@ -139,7 +139,7 @@ $(function main() {
         $(textToHide + ".active").removeClass("active").fadeOut(500, function() {
             $("#" + $textToShow).fadeIn(500).addClass("active");
         });
-    })
+    });
 
 
 
