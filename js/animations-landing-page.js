@@ -1,5 +1,4 @@
-$(function main() {
-
+jQuery(function ($) {
 
     /* animates grey and green car moving and battery charging on scroll */
 
@@ -12,13 +11,21 @@ $(function main() {
 
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 1600) {
+
+        //Get Window top & bottom limit
+        var topWindowLimit = $(window).scrollTop();
+        var bottomWindowLimit = $(window).height() + topWindowLimit;
+        //Get Element top / bottom limit
+        var batteryContainer = $(".fill-inner-container").offset().top;
+        var carContainer = $(".car-container").offset().top;
+
+        if (bottomWindowLimit > carContainer) {
             $carGrey.addClass("car-grey-move");
             $carGreen.addClass("car-green-move");
             $greyPath.addClass("grey-path-move");
             $greenPath.addClass("green-path-move");
             $miles.addClass("miles-move");
-            $fillGreen.addClass("fill-green-ani");
+
         }
         /*$(".miles").css("margin-left", "70px").delay(slow);*/
 
