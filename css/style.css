@@ -642,8 +642,8 @@ a:focus, a:hover{
 }
 
 .fill-green-ani {
-    -webkit-animation: battery-fill 2s 1s linear forwards;
-    animation: battery-fill 2s 1s linear forwards;
+    -webkit-animation: battery-fill 2s .5s linear forwards;
+    animation: battery-fill 2s .5s linear forwards;
 }
 
 .fill-green-ani2 {
@@ -728,28 +728,28 @@ a:focus, a:hover{
 }
 
 .car-grey-move {
-    -webkit-animation: car-grey-run 1s 1s forwards;
-    animation: car-grey-run 1s 1s forwards;
+    -webkit-animation: car-grey-run 1s .5s forwards;
+    animation: car-grey-run 1s .5s forwards;
 }
 
 .car-green-move {
-    -webkit-animation: car-green-run2 2s 1s forwards;
-    animation: car-green-run2 2s 1s forwards;
+    -webkit-animation: car-green-run2 2s .5s forwards;
+    animation: car-green-run2 2s .5s forwards;
 }
 
 .green-path-move {
-    -webkit-animation: green-path 2s 1s forwards;
-    animation: green-path 2s 1s forwards;
+    -webkit-animation: green-path 2s .5s forwards;
+    animation: green-path 2s .5s forwards;
 }
 
 .grey-path-move {
-    -webkit-animation: grey-path 2s 1s forwards;
-    animation: grey-path 2s 1s forwards;
+    -webkit-animation: grey-path 2s .5s forwards;
+    animation: grey-path 2s .5s forwards;
 }
 
 .miles-move {
-    -webkit-animation: miles 1s 1s forwards;
-    animation: miles 1s 1s forwards;
+    -webkit-animation: miles 1s .5s forwards;
+    animation: miles 1s .5s forwards;
 }
 
 .car-grey-move2 {
@@ -2067,8 +2067,8 @@ li:hover .plan-img-5 {
     margin-bottom: 8px;
     margin-left: 8px;
     margin-top: 15px;
-    padding: 9px;
-    padding-top: 10px;
+    padding-top: 6px;
+    padding-left: 2px;
     text-align: center;
     text-decoration: none;
     width: 34px;
@@ -2085,8 +2085,8 @@ li:hover .plan-img-5 {
     margin-bottom: 8px;
     margin-right: 8px;
     margin-top: 20px;
-    padding: 7px;
-    padding-top: 8px;
+    padding-top: 5px;
+    padding-left: 1px;
     text-align: center;
     text-decoration: none;
     width: 30px;
@@ -2505,6 +2505,10 @@ span.white {
     padding-top: 260px;
 }
 
+.contacts-links .col-xs-12.link {
+    padding-bottom: 50px;
+}
+
 .contacts-links .content-container {
     padding-bottom: 30px;
 }
@@ -2527,7 +2531,6 @@ span.white {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: .3px;
-    min-height: 66px;
 }
 
 .contacts-links .link a {
@@ -2672,10 +2675,11 @@ span.white {
 .locations {
     text-align: center;
     background: url(../images/contacts-third.jpg) no-repeat center center / cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .locations h2 {
-    padding-top: 102px;
     font-size: 40px;
     font-weight: 200;
     padding-bottom: 35px;
