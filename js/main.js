@@ -17,9 +17,9 @@ $(document).ready(function() {
     var pathArray = window.location.pathname.split( '/' );
     var NameUrl = pathArray[pathArray.length-1];
     if((NameUrl=="technology.html")||(NameUrl=="innovation.html")||(NameUrl=="benefits.html")){document.getElementsByClassName("opened-li")[1].style.color="#666666";}
-    if((NameUrl=="company.html")||(NameUrl=="research.html")||(NameUrl=="partnership.html")){document.getElementsByClassName("opened-li")[0].style.color="#666666";}
+    if((NameUrl=="company.html")||(NameUrl=="research.html")||(NameUrl=="partnerships.html")){document.getElementsByClassName("opened-li")[0].style.color="#666666";}
     if(NameUrl=="media.html"){document.getElementById("media").style.color="#666666";}
-    if(NameUrl=="contacts.html"){document.getElementById("contact").style.color="#666666";}
+    if(NameUrl=="contact.html"){document.getElementById("contact").style.color="#666666";}
 });
 
 /*Company page*/

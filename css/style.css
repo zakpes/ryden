@@ -363,6 +363,10 @@ a:focus, a:hover{
     color:white;
 }
 
+.navbar {
+    border: 0;
+}
+
 /*Header css end*/
 
 
@@ -1983,7 +1987,7 @@ li:hover .plan-img-5 {
 
 .copyright-container-pwj p {
     font-family: 'maven-pro', Helvetica, Arial, Sans-Serif;
-    font-weight: 200;
+    font-weight: 300;
     color: #373638;
     font-size: 11px;
     margin: 0;
@@ -2033,7 +2037,7 @@ li:hover .plan-img-5 {
 .footer-container-pwj ul li a {
     color: #c3c3c3;
     font-family: 'maven-pro', Helvetica, Arial, Sans-Serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .footer-container-pwj ul li a:hover {
