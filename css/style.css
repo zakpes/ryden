@@ -1374,18 +1374,18 @@ a:focus, a:hover{
 }
 ul.sprite-list {
     margin: 0 -5px;
-    width: 450px;
+    /* width: 450px; */
 
     padding: 0;
 
 }
 
 .sprite-list > li {
-    display: block;
-    float: left;
+    display: inline-block;
     list-style-type: none;
     margin-right: 2px;
     width: 80px;
+    vertical-align: top;
 }
 
 .sprite-list > li i {
@@ -2349,6 +2349,20 @@ li:hover .plan-img-5 {
     ul.tabbed-menu-list li {
         text-align: center;
         width: 100%;
+    }
+}
+
+.show-xs-manufacturers {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .hidden-xs-manufacturers {
+        display: none;
+    }
+
+    .show-xs-manufacturers {
+        display: block;
     }
 }
 /*technology*/
