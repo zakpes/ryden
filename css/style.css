@@ -646,7 +646,7 @@ a:focus, a:hover{
 .battery-fill-container {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: relative;
     text-align: center;
 }
 
@@ -662,9 +662,10 @@ a:focus, a:hover{
 
 .fill-inner-container {
     margin-top: 10px;
-    margin-left: -42px;
+    margin-left: -27px;
     height: 100%;
     width: 100%;
+    position: absolute;
 }
 
 .fill-green, .fill-red {
