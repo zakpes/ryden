@@ -3043,7 +3043,7 @@ position: relative;
     position: relative;
     display: inline-block;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .1s;
 }
 
 .photorow .photo img {
@@ -3057,20 +3057,9 @@ position: relative;
     top: 30px;
 }
 
-.text2 h2,
-.text2 p {
-    float: right;
-}
-
-.text3 h2,
-.text3 p {
-    float: left;
-}
-
 .wraper-text3 {
     position: relative;
     top: 25px;
-    width: 230px;
     height: auto;
 }
 
@@ -3100,16 +3089,17 @@ position: relative;
     width: 210px;
     height: 2px;
     margin-top: 0px;
-    margin-left: 25px;
     margin-bottom: 10px;
     background-color: red;
-    float: left;
+}
+
+#redline1 {
+    margin-left: 26px;
 }
 
 #redline2 {
     width: 230px;
     display: none;
-    margin-left: 70px;
 }
 
 #redline3 {
@@ -3135,7 +3125,6 @@ position: relative;
 .photorow>.text2 {
     position: relative;
     top: 0px;
-    left: -25px;
 }
 
 .text3 {
