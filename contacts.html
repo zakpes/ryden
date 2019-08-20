@@ -311,7 +311,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8 text-left">
-                        <p>Copyright 2016 Power Japan Plus. All rights Reserved.</p>
+                        <p>Copyright <span id="footer-copyright"></span> Power Japan Plus. All rights Reserved.</p>
                     </div>
                     <div class="col-xs-4 text-right">
                         <!--<p>United States <img src="images/usaflag.png" alt="united states's flag icon"></p>-->
@@ -324,7 +324,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8TRWc7Ilco93KJjVwvovnT-Iw64MkSxA&callback=InitMap"></script></script>
     <script type="text/javascript">
 
        function initialize() {
@@ -352,8 +352,8 @@
       // tabbed menu
       $(function() {
 
-        var i = $(".places-menu li"),
-        n = $(".places-target");
+        var i = $(".places-menu li");
+        var n = $(".places-target");
 
 
         i.on("click", function(t) {

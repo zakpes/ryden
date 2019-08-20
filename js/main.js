@@ -37,7 +37,7 @@ $(document).ready(function() {
             $("#redline2").css("display", "block");$("#redline1").css("display", "none");$("#redline3").css("display", "none");
             $( "#righttextcontent2" ).fadeIn("slow", function() {
                 $("#photo2").css("opacity", "1");$("#photo1").css("opacity", "0.4");$("#photo3").css("opacity", "0.4");
-                
+
                 usa = 2;
                 });});
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
         $("#righttextcontent1").css("display", "none");$("#righttextcontent2").css("display", "none");
         $( "#righttextcontent3" ).fadeIn("slow", function() {
             $("#photo3").css("opacity", "1");$("#photo1").css("opacity", "0.4");$("#photo2").css("opacity", "0.4");
-            
+
             usa = 3;
     });});
 
@@ -66,3 +66,8 @@ function externalLinks() {
 }
 window.onload = externalLinks;
 /*End ExternalLinks*/
+
+// Copyright current year
+const date = new Date();
+const copyright = document.getElementById("footer-copyright");
+copyright.textContent = date.getFullYear();
