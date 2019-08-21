@@ -1211,21 +1211,45 @@ a:focus, a:hover{
 
 /*=============   media page modules starts here ========================*/
 
-.media-module-content.pull-left {
-    margin-right: 20px;
-    margin-left: 0;
-}
-
-.media-module-content.pull-right {
-    margin-left: 20px;
-    margin-right: 0;
+.media-module-content {
+    margin-bottom: 30px;
+    background-color: #fff;
 }
 
 .media-module-info {
-    padding: 20px;
-    height: 292px;
-    background-color: #ffffff;
-    min-width: 150px;
+    padding: 30px 30px 30px 0;
+}
+
+.media-module-content > .media-module-info {
+    padding-left: 30px;
+}
+
+.media-img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.vimeovideowrap, .content, .youtubevideowrap, #disqus_thread, .videocontent {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .bigfont h3 {
@@ -1243,6 +1267,14 @@ a:focus, a:hover{
 
 .main-content-pwj > .container > .row:first-child {
     margin-top: 30px;
+}
+
+.main-content-pwj-media > .container > .row {
+    margin-bottom: 0;
+}
+
+.main-content-pwj-media > .container > .row:first-child {
+    margin-top: 0;
 }
 
 .cat {
@@ -2164,6 +2196,11 @@ li:hover .plan-img-5 {
 }
 
 @media all and (max-width:767px) {
+
+    .media-module-info {
+        padding-bottom: 20px;
+    	padding-left: 30px;
+    }
     .menu-tabs-pwj .search-icon-pwj {
         height: 68px;
     }
