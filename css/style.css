@@ -1203,6 +1203,7 @@ a:focus, a:hover{
     padding-top: 260px;
     padding-bottom: 100px;
     background: url("../images/mountain.jpg") no-repeat 0 0 / cover;
+    margin-bottom: 50px;
 }
 
 
