@@ -1299,7 +1299,19 @@ a:focus, a:hover{
 /*=============   partnership page starts here ========================*/
 
 .partnership-leading {
-    background: url("../images/partnership.jpg") no-repeat 0 0 / cover;
+    background: url("../images/partnership.jpg") no-repeat 0 bottom / cover;
+    position: relative;
+}
+
+.partnership-leading .content-container {
+	width: 42%;
+	padding-left: 12%;
+}
+
+.partnerships-hero-quote {
+    position: absolute;
+    right: 30px;
+    bottom: 13%;
 }
 
 .partnership-article-4 {
@@ -1330,6 +1342,10 @@ a:focus, a:hover{
 
 .current-partnership h1 {
     font-size: 14px;
+}
+
+.current-partnership h1.main-title {
+    margin-left: 16px;
 }
 
 .no-pl {
@@ -2146,6 +2162,9 @@ li:hover .plan-img-5 {
 /*All Media*/
 
 @media all and (max-width:1199px) {
+    .partnership-leading .content-container {
+    	width: 48%;
+    }
     .menu-tabs-pwj nav.navbar ul{
         padding-left: 0px;
     }
@@ -2161,6 +2180,10 @@ li:hover .plan-img-5 {
 }
 
 @media all and (max-width:991px) {
+    .partnership-leading .content-container {
+    	width: 50%;
+    	padding-left: 8%;
+    }
     .menu-tabs-pwj nav.navbar ul li a {
         padding: 0 16px;
     }
@@ -2197,6 +2220,12 @@ li:hover .plan-img-5 {
 }
 
 @media all and (max-width:767px) {
+
+    .partnership-leading .content-container {
+    	width: 100%;
+    	padding-left: 6%;
+        padding-right: 6%;
+    }
 
     .media-module-info {
         padding-bottom: 20px;
@@ -2361,6 +2390,14 @@ li:hover .plan-img-5 {
     }
 }
 
+@media screen and (max-width: 576px) {
+
+    .current-partnership .partner-no-top-margin {
+        margin-top: -100px;
+    }
+
+}
+
 @media screen and (min-width: 481px) and (max-width: 568px) {
     .ryden-battery.section-pwj {
         background-size: auto auto;
@@ -2374,6 +2411,13 @@ li:hover .plan-img-5 {
     ul.tabbed-menu-list li {
         padding-left: 28px !important;
         padding-right: 28px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .partnerships-hero-quote {
+        left: 20px;
     }
 }
 
