@@ -2162,6 +2162,7 @@ li:hover .plan-img-5 {
 /*All Media*/
 
 @media all and (max-width:1199px) {
+
     .partnership-leading .content-container {
     	width: 48%;
     }
@@ -3716,8 +3717,12 @@ position: relative;
 }
 
 .research.section-pwj .content-container {
-    padding: 0;
+    /* padding: 0; */
     padding-top: 40px;
+}
+
+.research.section-pwj .content-container-quote {
+    padding: 40px 0 20px 30px;
 }
 
 .research.section-pwj .content-container h1 {
@@ -3746,7 +3751,7 @@ position: relative;
 }
 
 .kyushu-univercity.section-pwj {
-    background: url(../images/research-two.jpg) no-repeat center center / cover;
+    background: url(../images/research-two.jpg) no-repeat center bottom / cover;
     padding-top: 355px;
     min-height: 770px;
 }
@@ -3776,8 +3781,7 @@ position: relative;
 }
 
 .breakthrough.section-pwj {
-    background: url(../images/research-three.jpg) no-repeat right top / cover;
-    padding-top: 225px;
+    background: url(../images/research-three.jpg) no-repeat left top / cover;
     min-height: 770px;
 }
 
@@ -3787,6 +3791,75 @@ position: relative;
 
 .breakthrough.section-pwj .content-container.c-quote p.quote {
     font-size: 11px;
+}
+
+.cc-research {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media all and (max-width:1199px) {
+
+    .breakthrough.section-pwj {
+    	background: url(../images/research-three.jpg) no-repeat 40% top / cover;
+    	padding-top: 140px;
+    	min-height: 770px;
+    }
+
+    .section-pwj-medical .content-container {
+    	padding-left: 100px;
+    }
+
+    .research.section-pwj .content-container-quote {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width:991px) {
+
+    .breakthrough.section-pwj {
+    	background: url(../images/research-three.jpg) no-repeat 24% top / cover;
+    }
+
+    .research.section-pwj .content-container-quote {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width:767px) {
+
+    .research.section-pwj {
+    	padding-top: 100px;
+    }
+
+    .breakthrough.section-pwj {
+    	background: url(../images/research-three.jpg) no-repeat left top / cover;
+    }
+
+    .research.section-pwj .content-container-quote {
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    }
+
+    .section-pwj-medical .content-container {
+        padding-left: 15px;
+    }
+}
+
+@media all and (max-width:575px) {
+
+    .breakthrough.section-pwj {
+    	background: url(../images/research-three.jpg) no-repeat 10% top / cover;
+    }
+}
+
+@media all and (max-width:479px) {
+
+    .breakthrough.section-pwj {
+    	background: url(../images/research-three.jpg) no-repeat 17% top / cover;
+    }
 }
 
 .breakthrough.section-pwj .content-container h2 {
@@ -3806,7 +3879,7 @@ position: relative;
 }
 
 .medical-section.section-pwj {
-    background: url(../images/research-four.jpg) no-repeat left center / cover;
+    background: url(../images/research-four.jpg) no-repeat right center / cover;
     padding-top: 300px;
     min-height: 770px;
 }
