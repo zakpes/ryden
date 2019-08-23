@@ -220,8 +220,17 @@ a:focus, a:hover{
     display: inline-block;
 }
 
+.menu-tabs-pwj .collapse.navbar-collapse {
+    float: right;
+    padding-right: 88px;
+}
+
 .btn-group.open .dropdown-toggle {
     box-shadow: none;
+}
+
+.social-icons-hide {
+    display: none;
 }
 
 .opened-li {
@@ -2217,6 +2226,12 @@ li:hover .plan-img-5 {
 @media all and (max-width:780px) {
     .menu-tabs-pwj nav.navbar ul li a {
         font-size: 12px;
+    }
+}
+
+@media all and (max-width:786px) {
+    .menu-tabs-pwj .collapse.navbar-collapse {
+        padding-right: 92px;
     }
 }
 
