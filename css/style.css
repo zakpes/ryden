@@ -2454,23 +2454,35 @@ li:hover .plan-img-5 {
 /*technology*/
 .techology-header.section-pwj {
     padding-top: 200px;
-    background: url(../images/techology-header.jpg) no-repeat center center / cover;
+    background: url(../images/techology-header.jpg) no-repeat left center / cover;
     min-height: 770px;
 }
 .techology-header-second{
-    padding-top: 200px;
+    padding-top: 100px;
     background: url(../images/technolody-battery.jpg) no-repeat center center / cover;
     min-height: 770px;
+}
+.quote-faster {
+    margin-bottom: 100px;
 }
 .techno-vesel{
     padding-top: 300px;
     background: url(../images/technolody-vesel.jpg) no-repeat center center / cover;
     min-height: 770px;
 }
+@media all and (max-width:767px) {
+    .techno-vesel{
+        padding-top: 40px;
+        min-height: 570px;
+    }
+}
 .techno-temperature.section-pwj {
     background: url(../images/technolody-temperature.jpg) no-repeat center center / cover;
-    padding-top: 355px;
+    padding-top: 120px;
     min-height: 770px;
+}
+.quote-temp {
+    margin-bottom: 280px;
 }
 .techno-temperature-container{text-align: center;}
 
