@@ -2650,7 +2650,7 @@ span.white {
 /*contacts*/
 
 .contacts-links {
-    background: url(../images/contacts-first.png) no-repeat left center / cover;
+    background: url(../images/contacts-first.png) no-repeat center center / cover;
     padding-top: 260px;
 }
 
@@ -2779,9 +2779,24 @@ span.white {
     outline: none;
 }
 
+@media all and (max-width: 767px) {
+
+    .col-767-12 {
+        width: 100%;
+    }
+
+    .submit.form-group input {
+        margin-left: 10px;
+    }
+}
+
 .radiobuttons {
     float: left;
     margin-right: 64px;
+}
+
+.radiobuttons:last-child {
+    margin-right: 0;
 }
 
 .radiobuttons label {
@@ -2844,6 +2859,7 @@ span.white {
 
 ul.places-menu {
     margin-bottom: 38px;
+    padding-left: 0;
 }
 
 ul.places-menu li {
@@ -2933,14 +2949,21 @@ ul.places-target {
     margin-bottom: 40px;
 }
 
-#la-map,
-#k-map,
-#o-map,
-#t-map {
+.mapouter {
+    position: relative;
+    text-align: right;
     height: 360px;
+    width: 100%;
     border: 2px solid #fff;
 }
 
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
 
 /*company page*/
 
@@ -3880,6 +3903,10 @@ position: relative;
     .breakthrough.section-pwj {
     	background: url(../images/research-three.jpg) no-repeat 10% top / cover;
     }
+
+    .red-new-line {
+        display: block;
+    }
 }
 
 @media all and (max-width:479px) {
@@ -3933,4 +3960,7 @@ position: relative;
 .no-gutter {
     margin-right: 0;
     margin-left: 0;
+}
+.header-container-pwj {
+	display: none;
 }

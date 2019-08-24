@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-offset-6 col-xs-6">
+                    <div class="col-sm-offset-6 col-sm-6">
                         <p class="quote"><i class="fa">+</i>you can reach us by calling +1 (310) 555 2601</p>
                     </div>
                 </div>
@@ -129,11 +129,14 @@
         <section class="contacts-form" id="contact-form">
             <div class="container">
                 <div class="row">
-                    <h2>Send us a message <span class="red">•</span><span class="tiny-text">required field</span></h2>
+                    <div class="col-xs-12">
+                            <h2>Send us a message <span class="red red-new-line">•<span class="tiny-text">required field</span></span></h2>
+                    </div>
+
                 </div>
                 <div class="row">
                     <form action="">
-                        <div class="left-side-form col-xs-5 make-xs">
+                        <div class="left-side-form col-xs-5 make-xs col-767-12">
                             <div class="input form-group">
                                 <label for="name">your name <span class="red">•</span></label>
                                 <input type="text" name="name"/>
@@ -151,7 +154,7 @@
                                 <input type="text" name="phone"/>
                             </div>
                         </div>
-                        <div class="right-side-form col-xs-7 make-xs">
+                        <div class="right-side-form col-xs-7 make-xs col-767-12">
                             <div class="textarea form-group">
                                 <label for="comments">Comments <span class="red">•</span></label>
                                 <textarea name="comments"></textarea>
@@ -186,7 +189,7 @@
                 <div class="row">
                     <h2>Locations</h2>
                     <p>Power Japan Plus’ work is a combination of engineering and turn of <bR>the century innovation utilizing organic carbon.</p>
-                    <div class="place-toggler col-xs-offset-2 col-xs-8 make-xs">
+                    <div class="place-toggler col-sm-offset-2 col-sm-8 make-xs">
                         <ul class="places-menu clearfix">
                             <li class="place active col-xs-3 make-xs" data-content="la">Los Angeles</li>
                             <li class="place col-xs-3 make-xs" data-content="t">Tokyo</li>
@@ -198,10 +201,14 @@
                 <div class="row">
                     <ul class="places-target col-xs-12 make-xs">
                         <li data-content="la" class="active">
-                            <div class="map-container col-xs-6 make-xs">
-                                <div id="la-map"></div>
+                            <div class="map-container col-sm-6 make-xs">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe width="440" height="356" id="gmap_canvas_la" src="https://maps.google.com/maps?q=edsel%20road%2C%20los%20angeles&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="contacts-text-container col-xs-6 make-xs">
+                            <div class="contacts-text-container col-sm-6 make-xs">
                                 <h1 class="country">united states</h1>
                                 <h2>Los Angeles</h2>
                                 <p>1889 Edsel Road, 2nd Floor<bR>Los Angeles, CA90067<bR>+1 (310) 461-1620</p>
@@ -209,41 +216,55 @@
                             </div>
                         </li>
                         <li data-content="t">
-                            <div class="map-container col-xs-6 make-xs">
-                                <div id="t-map"></div>
+                            <div class="map-container col-sm-6 make-xs">
+                                <!-- <div id="t-map"></div> -->
+                                <div class="mapouter mapouter-tokyo">
+                                    <div class="gmap_canvas">
+                                        <iframe width="440" height="356" id="gmap_canvas_tokyo" src="https://maps.google.com/maps?q=izumi-cho%2C%20tokyo&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                                    </div>
+                                </div>
                             </div>
-                            <div class="contacts-text-container col-xs-6 make-xs">
+                            <div class="contacts-text-container col-sm-6 make-xs">
                                 <h1 class="country">japan</h1>
                                 <h2>Tokyo</h2>
-                                <p>Ebisu Five Bldg. 4th Fl.,Ebisu Nishi 2-2-6, Shibuya-ku, Tokyo, 150-0021, Japan<br>
-                                Tel: +81-3-3780-7050<br>
-                                Fax: +81-3-3780-7051</p>
+                                <p>20-4, Izumi-cho, Itabashi-ku, Tokyo, 173-0001, Japan<br>
+                                Tel: +81-90-4303-0707<br>
+                                Fax: +81-90-4303-0708</p>
                                 <a href="">Get directions</a><a href="">email power japan plus tokyo</a>
                             </div>
                         </li>
                         <li data-content="o">
-                            <div class="map-container col-xs-6 make-xs">
-                                <div id="o-map"></div>
+                            <div class="map-container col-sm-6 make-xs">
+                                <div class="mapouter mapouter-okinawa">
+                                    <div class="gmap_canvas">
+                                        <iframe width="440" height="356" id="gmap_canvas_okinawa" src="https://maps.google.com/maps?q=okinawa&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="contacts-text-container col-xs-6 make-xs">
+                            <div class="contacts-text-container col-sm-6 make-xs">
                                 <h1 class="country">japan</h1>
                                 <h2>Okinawa</h2>
-                                <p>Naha Building 4th Fl.,1-10-24 Matsuo, Naha-city, Okinawa<br>
-                                Tel: +81-98-943-8191<br>
-                                Fax: +81-98-943-8192
+                                <p>405-1115, Kosobecho, Takatsuki-shi, Okinawa<br>
+                                Tel: +81-90-5410-4216<br>
+                                Fax: +81-90-5410-4216
                                 </p>
                                 <a href="">Get directions</a><a href="">email power japan plus okinawa</a>
                             </div>
                         </li>
                         <li data-content="k">
-                            <div class="map-container col-xs-6 make-xs">
-                                <div id="k-map"></div>
+                            <div class="map-container col-sm-6 make-xs">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe width="440" height="356" id="gmap_canvas_kyushu" src="https://maps.google.com/maps?q=fukuoka&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="contacts-text-container col-xs-6 make-xs">
+                            <div class="contacts-text-container col-sm-6 make-xs">
                                 <h1 class="country">japan</h1>
                                 <h2>Kyushu</h2>
-                                <p>Chikushi Campus Collaboration Bldg., <br>Rm 607,Kyushu University, 6-1 Kasuga-koen, <br>Kasuga-city, Fukuoka <br>816-8580, Japan<br>
-                                Tel + Fax: +81-92-583-8900
+                                <p>383-1034, Mikagetsukamachi, Higashinada-ku Kobe-shi <br>Kasuga-city, Fukuoka <br>816-8580, Japan<br>
+                                Tel + Fax: +81-90-5939-8354
                                 </p>
                                 <a href="">Get directions</a><a href="">email power japan plus kyushu</a>
                             </div>
@@ -331,27 +352,27 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8TRWc7Ilco93KJjVwvovnT-Iw64MkSxA&callback=InitMap"></script></script>
     <script type="text/javascript">
 
-       function initialize() {
-        var laMap = document.getElementById('la-map');
-        var kMap = document.getElementById('k-map');
-        var oMap = document.getElementById('o-map');
-        var tMap = document.getElementById('t-map');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var mapLa = new google.maps.Map(laMap, mapOptions)
-        var mapK = new google.maps.Map(kMap, mapOptions)
-        var mapO = new google.maps.Map(oMap, mapOptions)
-        var mapT = new google.maps.Map(tMap, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-      // toggle class
-      $('.radiobox').click(function() {
-        $('.radiobox').removeClass('active');
-        $(this).toggleClass('active');
-      })
+      //  function initialize() {
+      //   var laMap = document.getElementById('la-map');
+      //   var kMap = document.getElementById('k-map');
+      //   var oMap = document.getElementById('o-map');
+      //   var tMap = document.getElementById('t-map');
+      //   var mapOptions = {
+      //     center: new google.maps.LatLng(44.5403, -78.5463),
+      //     zoom: 8,
+      //     mapTypeId: google.maps.MapTypeId.ROADMAP
+      //   }
+      //   var mapLa = new google.maps.Map(laMap, mapOptions)
+      //   var mapK = new google.maps.Map(kMap, mapOptions)
+      //   var mapO = new google.maps.Map(oMap, mapOptions)
+      //   var mapT = new google.maps.Map(tMap, mapOptions)
+      // }
+      // google.maps.event.addDomListener(window, 'load', initialize);
+      // // toggle class
+      // $('.radiobox').click(function() {
+      //   $('.radiobox').removeClass('active');
+      //   $(this).toggleClass('active');
+      // })
 
       // tabbed menu
       $(function() {
