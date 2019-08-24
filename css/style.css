@@ -2650,7 +2650,7 @@ span.white {
 /*contacts*/
 
 .contacts-links {
-    background: url(../images/contacts-first.png) no-repeat center center / cover;
+    background: url(../images/contacts-first.png) no-repeat left center / cover;
     padding-top: 260px;
 }
 
@@ -3875,6 +3875,10 @@ position: relative;
     .research.section-pwj .content-container-quote {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .contacts-links {
+    	background: url(../images/contacts-first.png) no-repeat center center / cover;
+    	padding-top: 260px;
     }
 }
 
