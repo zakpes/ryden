@@ -1991,7 +1991,7 @@ li:hover .plan-img-5 {
 }
 
 .who-we-are {
-    background: url(../images/company-main.jpg) no-repeat 0 0 / cover;
+    background: url(../images/company-main.jpg) no-repeat center bottom / cover;
     min-height: 770px;
     padding-top: 260px;
 }
@@ -2687,14 +2687,16 @@ span.white {
     font-size: 10px;
     font-family: 'maven-pro';
     font-weight: 700;
-    color: #00a79d;
+    color: hsl(176.4, 100%, 32.7%);
     letter-spacing: 3px;
+    transition: all .3s;
 }
 
 .contacts-links .link a:hover,
 .contacts-links .link a:focus {
     outline: none;
     text-decoration: none;
+    color: hsl(176.4, 100%, 22.7%);
 }
 
 .contacts-links p.quote {
@@ -3036,9 +3038,30 @@ ul.places-target {
   margin-top: 30px;
 }
 
-.learnmore:hover {
+.learnmore:hover,
+.section-cta .btn:hover,
+.btn.btn-secondary:hover,
+.submit.form-group input:hover,
+.learnmore:focus,
+.section-cta .btn:focus,
+.btn.btn-secondary:focus,
+.submit.form-group input:focus {
     background: #4cbb5b;
     color: #fff;
+}
+
+.btn.btn-secondary.transparent {
+	background-color: transparent;
+	border-color: hsl(180, 0.5%, 61%);
+	color: hsl(180, 0.5%, 61%);
+}
+
+.btn.btn-secondary.transparent:hover
+.btn.btn-secondary.transparent:focus {
+	border: 2px solid hsl(180, 0.5%, 40%);
+	color: hsl(180, 0.5%, 40%);
+	transition: all .3s ease-in-out;
+	background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 .OurTeam{
