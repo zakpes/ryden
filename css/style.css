@@ -3064,13 +3064,18 @@ ul.places-target {
 	background-color: hsla(0, 0%, 0%, 0.4);
 }
 
+.img-awards {
+    max-width: 160px;
+    margin: 0 auto;
+}
+
 .OurTeam{
-  background-image: url(../images/teambk.png);
-background-repeat:no-repeat;
-background-size:cover;
-height: 770px;
-background-position:center;
-position: relative;
+     background-image: url(../images/teambk.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 770px;
+    background-position:center;
+    position: relative;
 }
 
 .OurTeam .middletexttechnology{
@@ -3079,7 +3084,6 @@ position: relative;
   color:white;
   position: absolute;
   font-size: 12px;
-    width: 100%;/*780px;*/
 
 }
 .OurTechnology {
@@ -3155,8 +3159,6 @@ position: relative;
     color: white;
     position: absolute;
     font-size: 12px;
-    width: 100%;
-    /*780px;*/
     margin: 0%;
     bottom: 90px;
     word-spacing: 3px;
@@ -3170,10 +3172,7 @@ position: relative;
 }
 
 .contentteam {
-    position: absolute;
-
-    top: 240px;
-
+    padding-top: 240px;
 }
 
 .Bios {
@@ -3209,6 +3208,11 @@ position: relative;
     display: inline-block;
     cursor: pointer;
     transition: all .1s;
+    z-index: 999;
+}
+
+.text.text1 {
+    padding-left: 40px;
 }
 
 .photorow .photo img {
@@ -3220,6 +3224,11 @@ position: relative;
     font-size: 28px;
     position: relative;
     top: 30px;
+}
+.wraper-text1,
+.wraper-text3,
+.wraper-text3 {
+    position: relative;
 }
 
 .wraper-text3 {
@@ -3250,27 +3259,30 @@ position: relative;
 
 #redline1,
 #redline2,
-#redline3 {
-    width: 210px;
+#redline3,
+.company-redline {
+    width: 260px;
     height: 2px;
     margin-top: 0px;
     margin-bottom: 10px;
     background-color: red;
+    position: absolute;
 }
 
 #redline1 {
-    margin-left: 26px;
+    margin-left: 0;
 }
 
-#redline2 {
-    width: 230px;
+#redline2,
+.company-redline.redline-2 {
+    width: 266px;
     display: none;
 }
 
 #redline3 {
     display: none;
     margin-left: 0px;
-    width: 220px;
+    /* width: 262px; */
 }
 
 .textname > h2 {
@@ -3306,7 +3318,6 @@ position: relative;
     border: 1px solid red;
     border-radius: 50%;
 }
-
 
 /*Animation*/
 
@@ -3988,6 +3999,260 @@ position: relative;
     margin-right: 0;
     margin-left: 0;
 }
+
+/* company-old styles
+ * ==================================== */
+/*
+@media all and (max-width: 991px) {
+
+    .Bios {
+    	height: auto;
+    }
+
+    .bioscontent {
+        width: auto;
+    }
+
+    .bioscontent .photos {
+    	position: relative;
+    	margin: 0 auto;
+    }
+
+    .bioscontent .righttext {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 30px 20px;
+        margin: 0 auto;
+    }
+
+    #righttextcontent1,
+    #righttextcontent2,
+    #righttextcontent3 {
+        padding-left: 0;
+    }
+}
+
+@media all and (min-width: 576px and max-width: 767px) {
+
+    .text.text1 {
+        padding-left: 8px;
+    }
+
+    .text2 {
+        left: 10px;
+    }
+
+    .text3 {
+        left: 10px;
+    }
+}
+
+@media all and (max-width: 575px) {
+
+    .text1,
+    .text3 {
+        transform: rotate(90deg);
+        width: 150px;
+    }
+
+    .text.text1 {
+    	right: -44px;
+    }
+
+    .photorow > .text2 {
+        transform: rotate(-90deg);
+        top: 36px;
+        width: 150px;
+    }
+
+    .photorow .text {
+        width: 150px;
+    }
+
+    .photorow .photo img {
+    	height: auto;
+    	width: 200px;
+    }
+
+    .wraper-text1 .textname > h2 {
+        top: 32px;
+        line-height: normal;
+    }
+
+    .photorow .text .wraper-text3 h2 {
+    	line-height: normal;
+    }
+
+    .wraper-text1 {
+    	top: -48px;
+    	left: -10px;
+    	position: relative;
+    }
+
+    .wraper-text3 {
+    	top: -3px;
+    	left: 68px;
+    }
+
+    .photorow > .text > h2 {
+    	top: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        line-height: normal;
+    }
+
+    .bioscontent .photos {
+    	width: initial;
+    }
+
+    #redline1,
+    #redline2,
+    #redline3 {
+        width: 150px;
+    }
+
+    .bioscontent .photos .photorow {
+    	margin-bottom: -2px;
+    }
+
+    .bioscontent .photos {
+    	margin-top: -9px;
+    }
+} */
+
+/* new company.html styles
+ * ==================================== */
+
+.Bios {
+    height: auto;
+}
+
+.company-photo {
+    padding-left: 120px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.company-photo.photo-2 {
+    padding-left: 0;
+    text-align: center;
+}
+
+.company-text-container.text-2,
+.company-text-container.text-3 {
+    display: none;
+}
+
+.company-text {
+    padding-top: 50px;
+}
+
+.company-text h2 {
+	letter-spacing: 1px;
+	font-size: 28px;
+	position: relative;
+    margin: 0;
+}
+
+.company-text.text-1,
+.company-text.text-3 {
+    padding-left: 60px;
+}
+
+.company-text.text-2 {
+    position: absolute;
+    right: -15px;
+}
+
+.newrighttext {
+    margin-top: 100px;
+}
+
+@media all and (max-width: 1199px) {
+
+    .company-photo {
+        padding-left: 23px;
+    }
+
+    .company-text.text-1,
+    .company-text.text-3 {
+        padding-left: 30px;
+    }
+
+    .company-text.text-2 {
+    	right: 16px;
+    }
+}
+
+@media all and (max-width: 991px) {
+
+    .company-photo {
+        padding-left: 60px;
+    }
+
+    .company-photo.photo-2 {
+        margin-left: -15px;
+        padding-left: 0;
+        text-align: initial;
+    }
+
+    .newrighttext {
+        margin-top: 0;
+        padding: 30px 20px;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    .our-company-text-container h2 {
+    	font-size: 44px;
+    }
+
+    .company-img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .company-photo,
+    .company-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .company-text {
+        margin-bottom: 50px;
+    }
+
+    .company-text.text-1,
+    .company-text.text-3 {
+        padding-left: 0;
+    }
+
+    .company-photo.photo-2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .company-text.text-2 {
+        position: relative;
+        text-align: center;
+        right: auto;
+    }
+
+    .company-redline {
+    	left: 50%;
+    	transform: translate(-50%);
+    }
+
+    .newrighttext {
+    	padding: 30px 10px;
+    }
+}
+
+
+/* 
 .header-container-pwj {
 	display: none;
-}
+} */
