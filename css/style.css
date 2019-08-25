@@ -2836,6 +2836,7 @@ span.white {
     letter-spacing: 2px;
     margin-top: 43px;
     margin-bottom: 111px;
+    transition: all 0.3s ease 0s;
 }
 
 .locations {
@@ -3048,6 +3049,7 @@ ul.places-target {
 .submit.form-group input:focus {
     background: #4cbb5b;
     color: #fff;
+    border: 2px solid #4cbb5b;
 }
 
 .btn.btn-secondary.transparent {
@@ -3056,7 +3058,7 @@ ul.places-target {
 	color: hsl(180, 0.5%, 61%);
 }
 
-.btn.btn-secondary.transparent:hover
+.btn.btn-secondary.transparent:hover,
 .btn.btn-secondary.transparent:focus {
 	border: 2px solid hsl(180, 0.5%, 40%);
 	color: hsl(180, 0.5%, 40%);
@@ -4252,7 +4254,7 @@ ul.places-target {
 }
 
 
-/* 
+/*
 .header-container-pwj {
 	display: none;
 } */
