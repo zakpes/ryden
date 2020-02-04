@@ -1,6 +1,5 @@
 jQuery(function ($) {
 
-
     /* animates grey and green car moving and battery charging on scroll */
 
     var $carGrey = $(".car-grey");
@@ -26,6 +25,7 @@ jQuery(function ($) {
             $greyPath.addClass("grey-path-move");
             $greenPath.addClass("green-path-move");
             $miles.addClass("miles-move");
+
         }
         /*$(".miles").css("margin-left", "70px").delay(slow);*/
 
@@ -147,7 +147,5 @@ jQuery(function ($) {
             $("#" + $textToShow).fadeIn(500).addClass("active");
         });
     });
-
-
 
 });
