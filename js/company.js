@@ -1,4 +1,4 @@
-/*Company page*/
+/* Company page */
     var usa = 1;
     $( "#photo1" ).click(function() {
         $("#redline1").fadeIn("fast");$(".company-redline.redline-2").fadeOut("fast");$("#redline3").fadeOut("fast");

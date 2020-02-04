@@ -65,6 +65,7 @@ function externalLinks() {
     }
 }
 window.onload = externalLinks;
+
 /*End ExternalLinks*/
 
 // Copyright current year
